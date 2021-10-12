@@ -6,42 +6,65 @@
 
 header {
   max-width: 100%;
-  height: 100vh;
   background-color: hsl(217, 28%, 15%);
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
   background-image: url(./assets/bg-curvy-desktop.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
 }
 
-.img-header {
+.LogoNav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  width: 80%;
+  margin: 50px;
+}
+
+header .logo {
+  width: 150px;
+  height: 50px;
+}
+
+header ul {
+  display: flex;
+}
+
+header li{
+  margin: 20px;
+  list-style-type: none;
   color: white;
 }
 
-.img-header img {
-  width: 700px;
-  margin-bottom: 25px;
+.contentHead {
+  text-align: center;
+  color: white;
 }
 
-.img-header h1 {
+.contentHead img {
+  width: 800px;
+  margin-bottom: 30px;
+}
+
+.contentHead h1 {
+  margin: auto;
   margin-bottom: 30px;
   width: 700px;
   text-align: center;
   font-family: sans-serif;
 }
 
-.img-header p {
+.contentHead p {
   width: 550px;
   text-align: center;
   font-family: sans-serif;
-  margin-bottom: 10px;
+  margin: auto;
 }
 
 .started {
@@ -56,35 +79,14 @@ header {
   );
   border-radius: 50px;
   border: none;
-  margin-top: 20px;
+  margin-top: 30px;
   color: white;
+  cursor: grab;
 }
 
 .started:hover {
   transform: scale(1.08);
   transition: 0.3s;
-}
-
-header .logo {
-  width: 150px;
-  height: 50px;
-  margin: 50px;
-}
-
-header ul {
-  margin-top: 50px;
-  margin-right: 50px;
-  display: flex;
-}
-
-header li {
-  margin: 20px;
-  list-style-type: none;
-  color: white;
-}
-
-header nav {
-  color: white;
 }
 
 main {
@@ -96,13 +98,14 @@ main {
 }
 
 main .informations {
+  width: 1024px;
+  height: 1024px;
+  margin-top: 50px;
+
   display: flex;
   align-content: center;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 950px;
-  height: 900px;
 }
 
 .infoBox {
@@ -114,8 +117,9 @@ main .informations {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 20px;
   color: white;
+
+  margin: 20px;
 }
 
 .infoBox img {
@@ -133,21 +137,7 @@ main .informations {
 .infoBox p {
   font-size: 16px;
   margin-bottom: 30px;
-  width: 350px;
-}
-
-.box3 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  text-align: center;
-}
-
-.box3 .productive {
-  width: 900px;
+  width: 400px;
 }
 
 .containerBox {
@@ -160,6 +150,13 @@ main .informations {
 
 .containerBox .image img {
   width: 650px;
+}
+
+.containerBox a {
+  display: flex;
+  color: hsl(176, 68%, 64%);
+  margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 .text {
@@ -178,37 +175,32 @@ main .informations {
   margin-bottom: 20px;
 }
 
-.containerBox a {
-  display: flex;
-  color: hsl(176, 68%, 64%);
-  margin-bottom: 20px;
-  text-decoration: underline;
-}
-
 .feedback {
+  height: 100vh;
+
   display: flex;
-  margin-top: 100px;
-  margin-bottom: 500px;
+  align-items: center;
 }
 
 .feedback .quotes {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   position: absolute;
+  transform: translateY(calc(30% - 150px));
 }
 
 .message {
-  border-radius: 10px;
   width: 450px;
+  height: 150px;
   margin: 20px;
   background-color: hsl(219, 30%, 18%);
+  padding: 50px;
+  border-radius: 10px;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   text-align: left;
-  padding: 50px;
-  position: relative;
-  top: 20px;
+  z-index: 1;
 }
 
 .text-user {
@@ -242,7 +234,7 @@ main .informations {
 
 footer {
   background-color: hsl(216, 53%, 9%);
-
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,124 +256,101 @@ footer .container {
   text-align: center;
 }
 
-footer .text-box{
-    width: 500px;
-    color: white;
-    margin:auto;
+footer .text-box {
+  width: 500px;
+  color: white;
+  margin: auto;
 }
 
-.text-box h1{
-    margin: 15px;
+.text-box h1 {
+  margin: 15px;
 }
 
-.startedEmail{
-    width: 200px;
-    height: 30px;
-    font-size: 16px;
-    padding: 10px;
-    background-image: linear-gradient(
-      90deg,
-      hsl(176, 68%, 64%),
-      hsl(198, 60%, 50%)
-    );
-    border-radius: 50px;
-    border: none;
-    margin-top: 20px;
-    margin-left: 20px;
-    color: white;
+.submit p{
+  position: relative;
+  right: 140px;
 }
 
-input[type="email"]{
-    width: 350px;
-    height: 20px;
-    padding: 10px 30px;
-    border-radius: 20px;
-    border: none;
+.startedEmail {
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  padding: 10px;
+  background-image: linear-gradient(
+    90deg,
+    hsl(176, 68%, 64%),
+    hsl(198, 60%, 50%)
+  );
+  border-radius: 50px;
+  border: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+  cursor: pointer;
 }
 
-.contact{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-    flex-direction: row;
-    width: 80%;
+input[type="email"] {
+  width: 350px;
+  height: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
 }
 
-.localization{
-    width: 300px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin-right: 50px;
+.contact {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 80%;
 }
 
-.localization img{
-    width: 200px;
+.localization {
+  width: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.localization-text{
-    display: flex;
+.localization img {
+  width: 200px;
 }
 
-.logo{
-    width: 100%;
-    margin-bottom: 20px;
-    display: block;
+.localization-text {
+  display: flex;
 }
 
-.localization-text img{
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
+.logo {
+  width: 100%;
+  margin-bottom: 20px;
+  display: block;
 }
 
-.contact-number li, a{
-    margin: 10px;
-    color: white;
+.localization-text img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
 }
 
-li, a{
-    text-decoration: none;
-    list-style-type: none;
+footer ul li a {
+  color: white;
+  text-decoration: none;
 }
 
-.teste{
-    display: flex;
-}
-
-.about ul{
-    margin: 50px;
-}
-
-.about li, a{
-    margin: 10px;
-    color: white;
-}
-
-.term ul{
-    margin: 50px;
-}
-
-.about li, a{
-    margin: 10px;
-    color: white;
-}
-
-.social ul{
-    margin: 50px;
-}
-
-.about li, a{
-    margin: 10px;
-    color: white;
+footer li{
+  margin: 10px;
+  list-style-type: none;
 }
 
 .social{
-    width: 20px;
-    height: 20px;
+  display: flex;
 }
 
-.about li, a{
-    margin: 10px;
-    color: white;
+.social li{
+  width: 20px;
+}
+
+.fab{
+  color: white;
+  width: 10px;
 }
