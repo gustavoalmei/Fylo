@@ -8,6 +8,12 @@
     <link rel="icon" href="./assets/favicon-32x32.png" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -177,47 +183,49 @@
                 </div>
                 <div class="submit">
                     <input type="email" name="email" id="email" placeholder="email@example.com">
-                    <button class="startedEmail" type="submit" id="submitEmail" onclick="emailValidator(email)">Get Started for Free</button>
+                    <button class="startedEmail" type="submit" id="submitEmail" onclick="emailValidator()">Get Started for Free</button>
                     <p class="valid"></p>
                   </div>
             </div>
         </div>
+        <div class="LogoFooter">
+          <a href="#">
+            <img class="logo" src="./assets/logo.svg" alt="">
+        </a>
+        </div>
             <div class="contact">
-                        <div class="localization">
-                            <a href="#">
-                                <img class="logo" src="./assets/logo.svg" alt="">
-                            </a>
-                            <div class="localization-text">
-                                <img src="./assets/icon-location.svg" alt="localization">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam sit ut dicta omnis. Ea nemo at quasi sed id libero dolore ad numquam, repellendus dolor? Repellendus quaerat illum veritatis.</p>
-                            </div>
-                        </div>
-                        <div class="contact-number">
-                            <ul>
-                                <li><a href="tel:+5551999999999">+55 51 9 9999-9999</a></li>
-                                <li><a href="mailto:email@exemple.com">email@exemple.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="about">
-                            <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Jobs</a></li>
-                                <li><a href="#">Press</a></li>
-                                <li><a  href="#">Blog</a></li>
-                            </ul>
-                        </div>
-                        <div class="term">
-                            <ul>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                            </ul>
-                        </div>
-                        <div class="social">
-                          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                          <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                          <li><a href="#"><i class="fab fa-instagram"></i></i></a></li>
-                        </div>
+              <div class="localization">
+                  <div class="localization-text">
+                      <img src="./assets/icon-location.svg" alt="localization">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam sit ut dicta omnis. Ea nemo at quasi sed id libero dolore ad numquam, repellendus dolor? Repellendus quaerat illum veritatis.</p>
+                  </div>
+              </div>
+              <div class="contact-number">
+                  <ul>
+                      <li><i class="far fa-envelope-open"></i><a href="tel:+5551999999999">+55 51 9 9999-9999</a></li>
+                      <li><a href="mailto:email@exemple.com"><i class="fas fa-phone"></i>email@exemple.com</a></li>
+                  </ul>
+              </div>
+              <div class="about">
+                  <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Jobs</a></li>
+                      <li><a href="#">Press</a></li>
+                      <li><a  href="#">Blog</a></li>
+                  </ul>
+              </div>
+              <div class="term">
+                  <ul>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Terms</a></li>
+                      <li><a href="#">Privacy</a></li>
+                  </ul>
+              </div>
+              <div class="social">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></i></a></li>
+              </div>
             </div>
         </div>
       </footer>

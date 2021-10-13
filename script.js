@@ -7,13 +7,14 @@ function emailValidator(){
     let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
 
-    if(email.match(mailformat)){
-        valid.innerText = "Email Valid"
-        valid.style.color = "green"
-        return true
-    }else{
-        valid.innerText = "Please enter a valid email address"
-        valid.style.color = "red"
-        return false
+    if(email != ""){
+        if(email.match(mailformat)){
+            valid.innerText = ""
+            return true
+        }else{
+            valid.innerText = "Please enter a valid email address"
+            valid.style.color = "red"
+            return false
+        }
     }
 }

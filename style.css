@@ -4,9 +4,17 @@
   box-sizing: content-box;
 }
 
+/* style desktop */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
 header {
   max-width: 100%;
   background-color: hsl(217, 28%, 15%);
+  font-family: "Raleway", sans-serif;
 
   display: flex;
   justify-content: space-between;
@@ -36,7 +44,7 @@ header ul {
   display: flex;
 }
 
-header li{
+header li {
   margin: 20px;
   list-style-type: none;
   color: white;
@@ -57,13 +65,11 @@ header li{
   margin-bottom: 30px;
   width: 700px;
   text-align: center;
-  font-family: sans-serif;
 }
 
 .contentHead p {
   width: 550px;
   text-align: center;
-  font-family: sans-serif;
   margin: auto;
 }
 
@@ -130,14 +136,14 @@ main .informations {
 
 .infoBox h1 {
   margin-bottom: 20px;
-  font-family: sans-serif;
   font-size: 18px;
 }
 
 .infoBox p {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 30px;
   width: 400px;
+  font-weight: 0;
 }
 
 .containerBox {
@@ -145,7 +151,6 @@ main .informations {
   align-items: center;
   justify-content: center;
   text-align: left;
-  font-family: sans-serif;
 }
 
 .containerBox .image img {
@@ -166,7 +171,7 @@ main .informations {
 }
 
 .text h1 {
-  width: 350px;
+  width: 300px;
   margin-bottom: 20px;
 }
 
@@ -234,7 +239,7 @@ main .informations {
 
 footer {
   background-color: hsl(216, 53%, 9%);
-  height: 70vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -260,13 +265,14 @@ footer .text-box {
   width: 500px;
   color: white;
   margin: auto;
+  margin-bottom: 10px;
 }
 
 .text-box h1 {
-  margin: 15px;
+  margin: 10px;
 }
 
-.submit p{
+.submit p {
   position: relative;
   right: 140px;
 }
@@ -312,12 +318,28 @@ input[type="email"] {
   flex-direction: column;
 }
 
-.localization img {
+.LogoFooter {
+  width: 80%;
+  margin-left: 150px;
+}
+
+.LogoFooter img {
   width: 200px;
+  margin-bottom: 50px;
 }
 
 .localization-text {
   display: flex;
+}
+
+.far {
+  color: white;
+  margin-right: 20px;
+}
+
+.fas {
+  color: white;
+  margin-right: 20px;
 }
 
 .logo {
@@ -337,20 +359,28 @@ footer ul li a {
   text-decoration: none;
 }
 
-footer li{
-  margin: 10px;
+footer li {
+  margin: 20px;
   list-style-type: none;
 }
 
-.social{
+.social {
   display: flex;
 }
 
-.social li{
+.social li {
   width: 20px;
 }
 
-.fab{
+.fab {
   color: white;
   width: 10px;
+}
+
+/* style mobile */
+
+@media screen and (max-width: 1920px) {
+  .message {
+    width: 400px;
+  }
 }
