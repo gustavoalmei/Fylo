@@ -56,7 +56,7 @@ header li {
 }
 
 .contentHead img {
-  width: 800px;
+  width: 45vw;
   margin-bottom: 30px;
 }
 
@@ -105,7 +105,6 @@ main {
 
 main .informations {
   width: 1024px;
-  height: 1024px;
   margin-top: 50px;
 
   display: flex;
@@ -166,44 +165,55 @@ main .informations {
 
 .text {
   color: white;
+  width: 40%;
   margin-left: 40px;
-  margin-bottom: 20px;
 }
 
 .text h1 {
-  width: 300px;
+  width: 40%;
   margin-bottom: 20px;
 }
 
 .text p {
-  width: 500px;
   margin-bottom: 20px;
 }
 
 .feedback {
-  height: 100vh;
-
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.feedback .box {
+  width: 80%;
+  display: flex;
+  position: relative;
+  align-items: stretch;
+  justify-content: center;
 }
 
 .feedback .quotes {
   width: 50px;
   height: 50px;
   position: absolute;
-  transform: translateY(calc(30% - 150px));
+  top: 0;
+  left: 230px;
+  transform: translate(-220px, 5px);
+  z-index: 99;
 }
 
 .message {
-  width: 450px;
-  height: 150px;
   margin: 20px;
   background-color: hsl(219, 30%, 18%);
   padding: 50px;
   border-radius: 10px;
+  font-size: 12px;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: left;
   z-index: 1;
 }
@@ -239,7 +249,6 @@ main .informations {
 
 footer {
   background-color: hsl(216, 53%, 9%);
-  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -377,10 +386,305 @@ footer li {
   width: 10px;
 }
 
-/* style mobile */
+/* Media Query */
 
-@media screen and (max-width: 1920px) {
-  .message {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    width: 100vw;
+  }
+
+  .contentHead img {
+    width: 45vw;
+  }
+
+  main .informations {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .informations .infoBox {
+    width: 350px;
+    margin: 10px;
+  }
+
+  .infoBox p {
+    font-size: 12px;
+    width: 80%;
+  }
+
+  .containerBox .image img {
     width: 400px;
+  }
+
+  .containerBox .text {
+    width: 30%;
+  }
+
+  .feedback {
+    width: 100%;
+  }
+
+  .feedback .box {
+    display: flex;
+    position: relative;
+  }
+
+  .feedback .quotes {
+    position: absolute;
+    left: 230px;
+    transform: translate(-240px, 5px);
+    z-index: 9;
+  }
+
+  .feedback .message {
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .message {
+    font-size: 12px;
+  }
+
+  footer .container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  header {
+    width: 100vw;
+  }
+
+  header .logo {
+    width: 150px;
+  }
+  .contentHead img {
+    width: 45vw;
+  }
+
+  .contentHead {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contentHead h1 {
+    width: 100%;
+  }
+
+  .contentHead p {
+    width: 100%;
+  }
+
+  main .informations {
+    justify-content: center;
+    width: 80%;
+  }
+
+  .informations .infoBox {
+    width: 200px;
+    margin: 10px;
+  }
+
+  .infoBox p {
+    font-size: 12px;
+    width: 80%;
+  }
+
+  .containerBox {
+    width: 100%;
+  }
+
+  .containerBox .image img {
+    width: 250px;
+  }
+
+  .containerBox .text {
+    font-size: 10px;
+    margin-left: 10px;
+    width: 30%;
+  }
+
+  .text h1 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .feedback {
+    flex-wrap: wrap;
+  }
+
+  .feedback .box{
+    flex-direction: column;
+  }
+
+  .feedback .quotes{
+    position: absolute;
+    left: 230px;
+    transform: translate(-220px, 5px);
+  }
+
+  .feedback .quotes img{
+    width: 30px;
+    height: 25px;
+  }
+
+  .feedback .message {
+    padding: 15px;
+    justify-content: center;
+  }
+
+  .message {
+    font-size: 12px;
+  }
+
+  footer .contact {
+    flex-direction: column;
+  }
+
+  footer .container {
+    width: 80%;
+    height: 300px;
+  }
+
+  .box .text-box {
+    width: 100%;
+  }
+
+  footer .LogoFooter {
+    margin: 0;
+    margin-left: 50px;
+  }
+
+  footer .LogoFooter img {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  footer .social {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .contentHead{
+    width: 100%;
+  }
+
+  header .LogoNav{
+    width: 100%;
+    margin: 10px 10px;
+  }
+
+  .contentHead p{
+    width: 100%;
+  }
+
+  .contentHead h1{
+    width: 100%;
+  }
+  
+  .contentHead img {
+    width: 45vw;
+  }
+
+  main .informations{
+    width: 100%;
+  }
+
+  header .logo {
+    margin: 0;
+    margin-left: 20px;
+    width: 50px;
+    height: 20px;
+  } 
+
+  header .LogoNav{
+    margin: 20px;
+  }
+
+  .LogoNav nav{
+    font-size: 12px;
+    margin-right: 20px;
+  }
+
+  .LogoNav li{
+    margin: 5px;
+  }
+
+  .informations .infoBox{
+    width: 100%;
+  }
+
+  .informations .infoBox p{
+    width: 100%;
+  }
+
+  .containerBox{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .containerBox .image img{
+    width: 70vw;
+  }
+
+  .containerBox .text{
+    width: 80%;
+  }
+
+  .containerBox .text h1{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .containerBox .text p{
+    font-size: 12px;
+  }
+
+  .feedback .box{
+    flex-direction: column;
+  }
+
+  footer .contact {
+    flex-direction: column;
+  }
+
+  footer .container {
+    width: 80%;
+    height: 100%;
+  }
+
+  .box .text-box{
+    width: 80%;
+  }
+
+  footer .LogoFooter {
+    margin: 0;
+    margin-left: 50px;
+  }
+
+  footer .LogoFooter img {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  footer .social {
+    width: 100%;
+    justify-content: center;
+  }
+
+  
+  input[type="email"] {
+    width: 50%;
+  }
+
+  .startedEmail{
+    margin: 20px 0;
+  }
+
+  .localization{
+    width: 100%;
   }
 }
