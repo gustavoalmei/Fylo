@@ -50,6 +50,10 @@ header li {
   color: white;
 }
 
+header ul a{
+  text-decoration: none;
+}
+
 .contentHead {
   text-align: center;
   color: white;
