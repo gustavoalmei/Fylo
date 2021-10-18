@@ -87,7 +87,7 @@ header li {
   border: none;
   margin-top: 30px;
   color: white;
-  cursor: grab;
+  cursor: pointer;
 }
 
 .started:hover {
